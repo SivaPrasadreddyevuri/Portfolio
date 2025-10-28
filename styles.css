@@ -3,8 +3,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 24px;
+    font-weight: normal;
     scroll-behavior: smooth;
     background-color: black;
     color: white;
@@ -47,11 +48,6 @@
 
 }
 
-/* ul li:hover {
-    cursor: pointer;
-    box-shadow: 0 2px 0px red;
-    transition: all 0.3s ease-in-out;
-} */
 ul li::after {
     content: '';
     display: block;
@@ -62,7 +58,6 @@ ul li::after {
 }
 ul li:hover::after {
     width: 100%;
-    
 }
 
 
@@ -118,13 +113,15 @@ ul li:hover::after {
     }
 }
 
-h1 {
-    text-align: center;
-}
 
 /* About section styles */
 #about {
     padding: 90px;
+    /* border: 2px solid rgb(255, 255, 255); */
+}
+ h1 {
+    text-align: center;
+    /* margin-bottom: 40px; */
 }
 
 #about-pic {
@@ -148,12 +145,22 @@ h1 {
     text-align: center;
 }
 
+/* Skills section styles */
+#Skill {
+    /* border: 2px solid rgb(255, 255, 255); */
+    padding: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    width: 100%;    
+}
+
 #Skills {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    padding: 90px;
 }
 
 #Skills div {
@@ -174,18 +181,59 @@ h1 {
     cursor: pointer;
 }
 
-#projects {
+/* Projects section styles */
+
+#project_section {
+   padding: 80px;
+    /* border: 2px solid rgb(255, 255, 255); */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+#project {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        gap: 80px;
+        padding: 30px;
+        /* border: 2px solid rgb(255, 255, 255); */
+}
+
+#project div{
+    border-radius: 5px;
+    width: 600px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    gap: 20px;
     justify-content: center;
     align-items: center;
-    gap: 30px;
-    margin: 20px;
-    padding: 90px;
+    /* border: 2px solid rgb(255, 255, 255); */
+    padding: 20px;
 }
 
-#projects p {
+#project div h3{
+    text-align: center;
+    color: rgb(6, 244, 117);
+}
+
+#project div a{
+    text-decoration: none;
+    color: rgb(4, 202, 237) 
+}
+#project div p{
+    text-align: left;
+}
+#project div:hover{
+    border:1px solid green;
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+#project p {
     width: auto;
     text-align: center;
 
