@@ -1,0 +1,175 @@
+/*  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 25px;
+    scroll-behavior:smooth;
+    background-color: rgba(243, 238, 238, 0.642);
+}
+/* Navbar styles */
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    background-color: #45c94e;
+}
+#navbar h1{
+    color: white;
+    padding: 20px;
+}
+#navbar ul{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-self: center;
+    list-style: none;
+    padding: 20px;
+
+}
+#navbar a {
+    text-decoration: none;
+    color: white;
+    /* background-color: #44ca5d; */
+    background-color: rgb(95, 217, 73);
+}
+ul li:hover {
+    cursor: pointer;
+}
+/*  Intro section styles */
+#intro {
+    text-align: left;
+    width: 100%;
+    background-color:rgba(243, 238, 238, 0.642);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding:20px;
+}
+#intro h1 {
+   text-align: left;
+}
+#intro span {
+    color: tomato;
+    font-weight: bold;
+}
+ #intro img {
+    width: 300px;
+    height:300px;
+    border-radius: 50%;
+    object-fit: cover;
+    animation: pulse 1.8s ease-in-out infinite;
+}
+/* Pulse animation */
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(0.93);
+    }
+
+    50% {
+        transform: scale(1.05);
+
+    }
+}
+
+h1 {
+    text-align: center;
+}
+
+/* About section styles */
+#about{
+    padding: 90px;
+}
+#about-pic {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+} 
+#about-pic img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+#about-pic p {
+    width: 800px;
+    padding: 20px;
+    text-align: center;
+}
+#Skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 90px;
+}
+#Skills div {
+    padding: 50px;
+    border-radius: 10px;
+    width: 180px;
+    text-align: center;
+    height: 150px;
+    box-shadow:   1px 1px 0px rgb(221, 199, 199), -1px -1px 0px rgb(221, 199, 199);
+
+}
+#Skills div:hover {
+    box-shadow:  4px 8px 2px rgba(0, 0, 0, 0.2),  4px 8px 2px rgba(0, 0, 0, 0.19);
+    transform: translateY(-15px);
+    transition: all 0.3s ease-in-out;
+}
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 20px;
+    padding: 90px;
+}
+
+#projects p {
+    width: auto;
+    text-align: center;
+
+}
+
+#contact {
+    margin: 20px;
+    padding: 10px;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+form input,
+form textarea {
+    width: auto;
+    padding: 10px;
+    border: 1px solid #f1e1e1;
+    border-radius: 5px;
+}
+
+form button {
+    width: 100px;
+    padding: 5px;
+    background-color: #0cf310;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
