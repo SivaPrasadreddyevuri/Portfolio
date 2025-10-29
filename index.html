@@ -9,6 +9,8 @@
 </head>
 
 <body>
+
+    <!-- Navbar Section -->
     <nav id="navbar">
         <a href="">
             <h1>Portfolio</h1>
@@ -23,6 +25,7 @@
 
         </ul>
     </nav>
+    <!-- Introduction Section -->
     <section id="intro">
         <div>
             <p>
@@ -32,14 +35,14 @@
             Welcome to my professional portfolio. <br>I am a skilled web developer with a passion for creating
             exceptional user experiences.
             </p>
-            <a href="https://www.linkedin.com/in/evurisiva3/"><img src="./assets/linkedin.jpg" alt=""></a>
-            <a href="https://github.com/SivaPrasadreddyevuri"><img src="./assets/github.jpeg" alt=""></a>
+            <a href="https://www.linkedin.com/in/evurisiva3/" target="_blank"><img src="./assets/linkedin.jpg" alt=""></a>
+            <a href="https://github.com/SivaPrasadreddyevuri" target="_blank"><img src="./assets/github.jpeg" alt=""></a>
         </div>
         <div id="profile-pic">
             <img src="./assets/profile.jpeg" alt="Profile Picture" />
         </div>
     </section>
-
+    <!-- About Me Section -->
     <div id="about">
         <h1>About Me</h1>
         <div id="about-pic">
@@ -57,7 +60,7 @@
         </div>
 
     </div>
-
+    <!-- Skills Section -->
     <section id="Skill">
         <div>
             <h1>Skills</h1>
@@ -85,8 +88,7 @@
         </div>
 
     </section>
-
-
+    <!-- Projects Section -->
     <section id="project_section">
         <div id="p_heading">
             <h1>
@@ -121,27 +123,25 @@
 
 
     </section>
-
-    <div id="contact">
+    <!-- Contact Me Section -->
+    <section id="contact">
         <h1>
-            Contact Me
+            Contact Me:
         </h1>
-        <form action="https://formspree.io/f/mayvlrpg" method="POST">
+        <form action="" method="POST" id="contact_form">
 
-            <input type="text" id="name" name="name" required placeholder="Enter Your Name" />
-            <br />
+            <input type="text" id="name" name="name" required placeholder="Enter Your Name"  />
+            <input type="tel"  id="phone" name="phone" required placeholder="Your Phone Number" />
             <input type="email" id="email" name="email" required placeholder="YourMail@gamil.com" />
-            <br />
+            <input type="text" id="subject" name="subject" required placeholder="Enter Your Subject" />
             <textarea id="message" name="message" required placeholder="Enter Your Message here"></textarea>
-            <br />
-            <button type="submit">Send</button>
+            <input id="submit_btn" type="submit" value="Send Message" />
         </form>
-    </div>
+    </section>
 
-</body>
 <footer>
     <p>&copy; 2024 My Portfolio</p>
 </footer>
 
-
+</body>
 </html>

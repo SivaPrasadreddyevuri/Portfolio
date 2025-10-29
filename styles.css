@@ -13,6 +13,7 @@
 
 /* Navbar styles */
 #navbar {
+    padding: 10px;
     position: sticky;
     top: 0px;
     z-index: 100;
@@ -22,30 +23,18 @@
     align-items: center;
     box-shadow: 0px 4px 4px rgb(35, 3, 244);
     border-radius: 0 0 10px 10px;
-  
+    /* background-color: white; */
 }
-
-#navbar h1 {
-    color: white;
-    padding: 20px;
-  
-}
-
 #navbar ul {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     list-style: none;
     padding: 20px;
-  
-
 }
 
 #navbar a {
     text-decoration: none;
-    color: white;
-  
-
 }
 
 ul li::after {
@@ -56,6 +45,7 @@ ul li::after {
     background: tomato;
     transition: width 0.3s;
 }
+
 ul li:hover::after {
     width: 100%;
 }
@@ -76,19 +66,28 @@ ul li:hover::after {
 #intro h1 {
     font-size: 48px;
     text-align: left;
-    color: rgb(31, 13, 236);
-
+    color: rgb(23, 2, 248);
 }
 
 #intro span {
     color: tomato;
     font-weight: bold;
 }
-#intro img{
+
+#intro a img {
     border-radius: 50%;
     width: 30px;
     height: 30px;
-    margin: 5px;
+    margin:2px;
+}
+#intro a img:hover {
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+#intro a img:active {
+    transform: scale(0.9);
+    transition: all 0.1s ease-in-out;
 }
 
 #profile-pic img {
@@ -117,11 +116,12 @@ ul li:hover::after {
 /* About section styles */
 #about {
     padding: 90px;
-    /* border: 2px solid rgb(255, 255, 255); */
 }
- h1 {
+
+h1 {
     text-align: center;
-    /* margin-bottom: 40px; */
+    color: rgb(31, 13, 236);
+    font-size: 40px;
 }
 
 #about-pic {
@@ -129,7 +129,7 @@ ul li:hover::after {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 60px;
+    gap: 40px;
 }
 
 #about-pic img {
@@ -142,18 +142,16 @@ ul li:hover::after {
 #about-pic p {
     width: 800px;
     padding: 20px;
-    text-align: center;
 }
 
 /* Skills section styles */
 #Skill {
-    /* border: 2px solid rgb(255, 255, 255); */
     padding: 90px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 50px;
-    width: 100%;    
+    width: 100%;
 }
 
 #Skills {
@@ -169,12 +167,12 @@ ul li:hover::after {
     width: 180px;
     text-align: center;
     height: 150px;
-    box-shadow:-1px -1px 0px rgb(250, 23, 2);
+    box-shadow: -1px -1px 0px rgb(250, 23, 2);
 
 }
 
 #Skills div:hover {
-    border:1px solid rgb(6, 244, 117);
+    border: 1px solid rgb(6, 244, 117);
     box-shadow: 4px 8px 0px rgba(10, 223, 56, 0.2), 4px 8px 0px rgba(21, 202, 42, 0.19);
     transform: translateY(-15px);
     transition: all 0.3s ease-in-out;
@@ -184,26 +182,24 @@ ul li:hover::after {
 /* Projects section styles */
 
 #project_section {
-   padding: 80px;
-    /* border: 2px solid rgb(255, 255, 255); */
+    padding: 90px;
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 
-
 #project {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: center;
-        gap: 80px;
-        padding: 30px;
-        /* border: 2px solid rgb(255, 255, 255); */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 80px;
+    padding: 30px;
 }
 
-#project div{
+#project div {
     border-radius: 5px;
+    border: 1px solid rgba(255, 0, 0, 0.389);
     width: 600px;
     display: flex;
     flex-wrap: wrap;
@@ -211,60 +207,86 @@ ul li:hover::after {
     gap: 20px;
     justify-content: center;
     align-items: center;
-    /* border: 2px solid rgb(255, 255, 255); */
-    padding: 20px;
+    padding: 20px;  
 }
 
-#project div h3{
-    text-align: center;
+#project div h3 {
+    /* text-align: center; */
     color: rgb(6, 244, 117);
 }
 
-#project div a{
+#project div a {
     text-decoration: none;
-    color: rgb(4, 202, 237) 
+    color: rgb(4, 202, 237);
 }
-#project div p{
-    text-align: left;
-}
-#project div:hover{
-    border:1px solid green;
+
+#project div:hover {
+    border: 1px solid green;
     transform: scale(1.1);
     transition: all 0.3s ease-in-out;
 }
 
-#project p {
-    width: auto;
-    text-align: center;
-
-}
+/* Contact Me section styles */
 
 #contact {
-    margin: 20px;
-    padding: 10px;
-}
-
-#contact form {
+    padding: 50px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    flex-wrap: wrap;
+    gap: 30px;
+}
+#contact_form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 form input,
 form textarea {
-    width: auto;
     padding: 10px;
-    border: 1px solid #f1e1e1;
     border-radius: 5px;
+    outline: none;
+    border: 1px solid rgba(90, 73, 73, 0.662);
 }
-
-form button {
-    width: 100px;
-    padding: 5px;
-    background-color: #0cf310;
-    color: white;
+#submit_btn {
+    background-color: rgba(55, 248, 2, 0.871);
+    font-weight: bold;
+    cursor: pointer;
     border: none;
-    border-radius: 5px;
 }
+#submit_btn:active {
+    transform: scale(0.95);
+    transition: all 0.1s ease-in-out;
+}
+form input:focus,
+form textarea:focus {           
+    border: 2px solid rgba(208, 6, 244, 0.448);
+    box-shadow: -4px 4px 8px rgba(208, 6, 244, 0.448);
+}
+form textarea {
+    resize: vertical;
+    min-height: 100px;
+    max-height: 300px;
+}
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(20, 20, 20);
+    color: white;
+    margin-top: 50px;
+}
+footer p {
+    font-size: 18px;
+}
+footer p:hover {
+    color: rgb(6, 244, 117);
+    transition: all 0.3s ease-in-out;
+}
+/* Responsive styles */
+@media (max-width: 768px) {
+   
+    
+}
+/*  *//*  */
