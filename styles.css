@@ -87,6 +87,7 @@ details[open] summary div:nth-child(2){
 
 #navbar a {
     text-decoration: none;
+    color: blue;
 }
 
 ul li::after {
@@ -94,7 +95,7 @@ ul li::after {
     display: block;
     width: 0;
     height: 2px;
-    background: tomato;
+    background: rgb(52, 251, 2);
     transition: width 0.3s;
 }
 
@@ -121,7 +122,7 @@ ul li:hover::after {
 }
 
 #intro span {
-    color: tomato;
+    color: rgb(71, 247, 7);
     font-weight: bold;
 }
 
